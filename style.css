@@ -1,0 +1,281 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+header{
+    background-color: #ccd5ae;
+    padding: 20px 0;
+}
+
+
+a img{
+    height: 250px;
+    width: 250px;
+}
+
+.cajaEncabezado{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px ;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+
+.habilidades{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.habilidades li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    background: #94d2bd;
+    padding: 30px 20px;
+    border: 2px solid #001219;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.habilidades li:hover{
+    border-color: goldenrod;
+}
+
+.habilidades li:hover h2{
+    font-size: 32px;
+}
+
+.habilidades li:active{
+    border-color: green;
+}
+
+.tituloHabilidades{
+    padding-bottom: 20px;
+}
+
+.habilidades h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descripcionHabilidades{
+    font-size: 20px;
+}
+
+.anio{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer{
+    background: #d4a373;
+    text-align: center;
+    padding: 40px;
+}
+
+.logo-footer{
+    width: 200px;
+    height: 200px;
+}
+
+.p-copyright{
+    margin: 20px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 4px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 16px;
+}
+
+/* CSS para nuestro home*/
+
+.banner{
+    width: 100%;    
+}
+
+.principal{
+    background-color: white;
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto; 
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+    color: aqua;
+}
+
+.mision{
+    font-style: italic;
+    font-size: 18px;
+}
+
+.caballeria-logo{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(white, #faedcd);
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background-color: #faedcd;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 5px #ccd5ae ;
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.2;    
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen  and (max-width: 480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .cajaEncabezado, .principal, .mapa, .contenido-diferenciales, .video{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}
